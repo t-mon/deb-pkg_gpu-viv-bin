@@ -11,7 +11,7 @@ Homepage: <insert the upstream URL, if relevant>
 Package: gpu-viv-bin-fb
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754
 Provides: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
 Breaks: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
 Replaces: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
@@ -31,7 +31,7 @@ Description: <insert up to 60 chars description>
 Package: gpu-viv-bin-dfb
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754
 Provides: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
 Breaks: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
 Replaces: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
@@ -51,7 +51,7 @@ Description: <insert up to 60 chars description>
 Package: gpu-viv-bin-x11
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libgl1-mesa-dri
+Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754, libgl1-mesa-dri
 Provides: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
 Breaks: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
 Replaces: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
