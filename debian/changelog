@@ -1,3 +1,10 @@
+gpu-viv-bin-v4 (3.10.17-1.0.1) stable; urgency=low
+
+  * mirror Freescale's versioning
+  * add galcore baseversion to name
+
+ -- Josua Mayer <privacy@not.given>  Fri, 08 May 2015 19:46:56 +0200
+
 gpu-viv-bin (2) unstable; urgency=high
 
   * depend on mesa swrast driver as fallback

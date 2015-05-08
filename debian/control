@@ -1,4 +1,4 @@
-Source: gpu-viv-bin
+Source: gpu-viv-bin-v4
 Priority: optional
 Maintainer: Josua Mayer <josua@unknown>
 Build-Depends: debhelper (>= 8.0.0)
@@ -8,62 +8,62 @@ Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://git.debian.org/collab-maint/gpu-viv-bin.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/gpu-viv-bin.git;a=summary
 
-Package: gpu-viv-bin-fb
+Package: gpu-viv-bin-v4-fb
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754
-Provides: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
-Breaks: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
-Replaces: gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
+Provides: gpu-viv-bin-v4, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
+Breaks: gpu-viv-bin-v4, gpu-viv-bin, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
+Replaces: gpu-viv-bin-v4, gpu-viv-bin, gpu-viv-bin-fb, libegl1-fb, libgles1, libgles2, libopenvg1, libopencl1
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: gpu-viv-bin-fb-dev
+Package: gpu-viv-bin-v4-fb-dev
 Section: libdevel
 Architecture: any
-Depends: gpu-viv-bin-fb (= ${binary:Version})
-Provides: libegl-dev, libgles2-dev
-Breaks: libegl-dev, libgles2-dev
-Replaces: libegl-dev, libgles2-dev
+Depends: gpu-viv-bin-v4-fb (= ${binary:Version})
+Provides: gpu-viv-bin-v4-dev, libegl-dev, libgles2-dev
+Breaks: gpu-viv-bin-v4-dev, gpu-viv-bin-fb-dev, libegl-dev, libgles2-dev
+Replaces: gpu-viv-bin-v4-dev, gpu-viv-bin-fb-dev, libegl-dev, libgles2-dev
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: gpu-viv-bin-dfb
+Package: gpu-viv-bin-v4-dfb
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754
-Provides: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
-Breaks: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
-Replaces: gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
+Provides: gpu-viv-bin-v4, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
+Breaks: gpu-viv-bin-v4, gpu-viv-bin, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
+Replaces: gpu-viv-bin-v4, gpu-viv-bin, gpu-viv-bin-dfb, libegl1-dfb, libgles1, libgles2, libopenvg1, libopencl1
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: gpu-viv-bin-dfb-dev
+Package: gpu-viv-bin-v4-dfb-dev
 Section: libdevel
 Architecture: any
-Depends: gpu-viv-bin-dfb (= ${binary:Version})
-Provides: libegl-dev, libgles2-dev
-Breaks: libegl-dev, libgles2-dev
-Replaces: libegl-dev, libgles2-dev
+Depends: gpu-viv-bin-v4-dfb (= ${binary:Version})
+Provides: gpu-viv-bin-v4-dev, libegl-dev, libgles2-dev
+Breaks: gpu-viv-bin-v4-dev, gpu-viv-bin-dfb-dev, libegl-dev, libgles2-dev
+Replaces: gpu-viv-bin-v4-dev, gpu-viv-bin-dfb-dev, libegl-dev, libgles2-dev
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: gpu-viv-bin-x11
+Package: gpu-viv-bin-v4-x11
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, galcore-4.6.9.9754, libgl1-mesa-dri
-Provides: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
-Breaks: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
-Replaces: gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
+Provides: gpu-viv-bin-v4, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
+Breaks: gpu-viv-bin-v4, gpu-viv-bin, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
+Replaces: gpu-viv-bin-v4, gpu-viv-bin, gpu-viv-bin-x11, libgl1, libegl1-x11, libgles1, libgles2, libopenvg1, libopencl1
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: gpu-viv-bin-x11-dev
+Package: gpu-viv-bin-v4-x11-dev
 Section: libdevel
 Architecture: any
-Depends: gpu-viv-bin-x11 (= ${binary:Version}), mesa-common-dev
-Provides: libgl-dev, libegl-dev, libgles2-dev
-Breaks: libgl-dev, libegl-dev, libgles2-dev
-Replaces: libgl-dev, libegl-dev, libgles2-dev
+Depends: gpu-viv-bin-v4-x11 (= ${binary:Version}), mesa-common-dev
+Provides: gpu-viv-bin-v4-dev, libgl-dev, libegl-dev, libgles2-dev
+Breaks: gpu-viv-bin-v4-dev, gpu-viv-bin-x11-dev, libgl-dev, libegl-dev, libgles2-dev
+Replaces: gpu-viv-bin-v4-dev, gpu-viv-bin-x11-dev, libgl-dev, libegl-dev, libgles2-dev
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
